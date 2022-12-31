@@ -6,7 +6,7 @@ func Prime(n int) bool {
 
 	count := 0
 
-	for i := 2; i < n; i++ {
+	for i := 2; i < n/2; i++ {
 		if n%i == 0 {
 			count++
 		}
@@ -47,6 +47,7 @@ func Pali(n int) int {
 	for {
 
 		if quo == 0 {
+			finl = (finl * 10) + rem
 			break
 		} else {
 			finl = (finl * 10) + rem
@@ -59,7 +60,7 @@ func Pali(n int) int {
 		}
 
 	}
-	finl = (finl * 10) + rem
+
 	return finl
 
 }
