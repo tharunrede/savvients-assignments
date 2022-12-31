@@ -38,11 +38,12 @@ func Fib(n int) {
 
 }
 
-func Pali(n int) int {
+func Pali(n int) bool {
 
 	quo := n / 10
 	rem := n % 10
 	finl := 0
+
 	//fmt.Println("quo  rem finl out", quo, rem, finl)
 	for {
 
@@ -61,6 +62,6 @@ func Pali(n int) int {
 
 	}
 
-	return finl
+	return finl == n
 
 }
