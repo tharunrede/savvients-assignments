@@ -26,7 +26,7 @@ func main() {
 			break
 		} else if target < val {
 			//fmt.Println("in tar> val")
-			initial_arr = append(initial_arr[:pos+1], initial_arr[pos:]...) // index < len(a)
+			initial_arr = append(initial_arr[:pos+1], initial_arr[pos:]...)
 			initial_arr[pos] = target
 			position_inserted = pos
 			break
